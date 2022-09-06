@@ -753,6 +753,7 @@ def sagemaker_launcher(sagemaker_config: SageMakerConfig, args):
         hyperparameters=hyperparameters,
         environment=environment,
         metric_definitions=sagemaker_metrics,
+        checkpoint_s3_uri=sagemaker_config.checkpoint_s3_uri
     )
 
     huggingface_estimator.fit(inputs=sagemaker_inputs)
