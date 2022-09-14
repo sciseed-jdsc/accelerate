@@ -172,3 +172,4 @@ class SageMakerConfig(BaseConfig):
     sagemaker_metrics_file: str = None
     checkpoint_s3_uri: str = None
     volume_size: int = 30
+    input_mode: str = "File"
