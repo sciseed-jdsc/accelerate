@@ -754,7 +754,7 @@ def sagemaker_launcher(sagemaker_config: SageMakerConfig, args):
         environment=environment,
         metric_definitions=sagemaker_metrics,
         checkpoint_s3_uri=sagemaker_config.checkpoint_s3_uri,
-        volume_size=sagemaker_config.volume_size
+        volume_size=sagemaker_config.volume_size,
         input_mode=sagemaker_config.input_mode
     )
 
